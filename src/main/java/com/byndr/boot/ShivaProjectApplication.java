@@ -26,6 +26,7 @@ public class ShivaProjectApplication {
 	public static void main(String[] args) {
 		
 		SpringApplication.run(ShivaProjectApplication.class, args);
+		System.out.println("hello");
 	}
 
 }
