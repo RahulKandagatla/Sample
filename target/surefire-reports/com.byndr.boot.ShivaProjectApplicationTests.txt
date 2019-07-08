@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: com.byndr.boot.ShivaProjectApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 22.689 s <<< FAILURE! - in com.byndr.boot.ShivaProjectApplicationTests
+contextLoads(com.byndr.boot.ShivaProjectApplicationTests)  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: java.lang.IllegalStateException: Failed to execute CommandLineRunner
+Caused by: org.springframework.transaction.CannotCreateTransactionException: Could not open JPA EntityManager for transaction; nested exception is org.hibernate.exception.GenericJDBCException: Unable to acquire JDBC Connection
+Caused by: org.hibernate.exception.GenericJDBCException: Unable to acquire JDBC Connection
+Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+

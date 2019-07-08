@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: shiva-project-ex
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: RAHUL
+Implementation-Vendor-Id: com.byndr
+Build-Jdk: 1.8.0_192
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/student
+Created-By: Maven Integration for Eclipse
+
