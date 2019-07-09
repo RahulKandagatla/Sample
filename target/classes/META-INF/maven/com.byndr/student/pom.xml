@@ -17,6 +17,14 @@
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
+	
+	<!-- Redshift connection -->
+	<repositories>
+		<repository>
+			<id>redshift</id>
+			<url>http://redshift-maven-repository.s3-website-us-east-1.amazonaws.com/release</url>
+		</repository>
+	</repositories>
 
 	<dependencies>
 		<dependency>
@@ -33,11 +41,27 @@
 			<artifactId>spring-boot-devtools</artifactId>
 			<scope>runtime</scope>
 		</dependency>
-		<dependency>
+		<!-- <dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<scope>runtime</scope>
+		</dependency> -->
+		<!-- https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-redshift -->
+		<dependency>
+			<groupId>com.amazonaws</groupId>
+			<artifactId>aws-java-sdk-redshift</artifactId>
+			<!-- <version>1.11.488</version> -->
+			<version>1.11.505</version>
 		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.amazon.redshift/redshift-jdbc42-no-awssdk -->
+		<dependency>
+			<groupId>com.amazon.redshift</groupId>
+			<artifactId>redshift-jdbc42-no-awssdk</artifactId>
+			<!-- <version>1.2.18.1036</version> -->
+			<version>1.2.10.1009</version>
+		</dependency>
+		
 		<!--dependency>
     		<groupId>com.h2database</groupId>
     		<artifactId>h2</artifactId>
