@@ -8,6 +8,7 @@ package com.byndr.boot.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 /**
  * entity/model class represents table Student in db
@@ -15,6 +16,7 @@ import javax.persistence.Id;
  * @category Entity 
  *
  */
+@Table(name="student", schema="public")
 @Entity
 public class Student {
 	@Id

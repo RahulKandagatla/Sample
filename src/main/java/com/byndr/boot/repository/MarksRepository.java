@@ -55,6 +55,6 @@ public interface MarksRepository extends JpaRepository<Marks, Integer> {
 	 * @param studentId
 	 * @return english,hindi,telugu marks
 	 */
-	@Query(value="select english,hindi,telugu from Marks  where student_id= :studentId", nativeQuery=true)
+	@Query(value="select english,hindi,telugu from public.marks  where student_id= :studentId", nativeQuery=true)
 	public List<Object[]> findAllLanguages( Integer studentId);
 }
